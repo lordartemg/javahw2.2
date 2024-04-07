@@ -3,13 +3,15 @@
 public class Main {
     public static void main(String[] args) {
         int currentBalance = 250;
-        int topUpAmount = 1400;
+        int topUpAmount = 150;
 
         int bonus = 0;
 
         if (topUpAmount > 1000) {
-            bonus = topUpAmount /100;
-        } else bonus = 0;
+            bonus = topUpAmount / 100;
+        } else {
+            bonus = 0;
+        }
 
         int totalBalance = currentBalance + topUpAmount + bonus;
 
